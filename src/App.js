@@ -1,7 +1,9 @@
-import './App.css';
+import FeedbackCounter from './components/FeedbackCounter/FeedbackCounter';
 
-function App() {
-  return <div className="App">Hello</div>;
+export default function App() {
+  return (
+    <>
+      <FeedbackCounter />
+    </>
+  );
 }
-
-export default App;
