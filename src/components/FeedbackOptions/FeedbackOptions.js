@@ -2,16 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import s from './FeedbackOptions.module.css';
 
-const FeedbackOptions = ({ option, onLeaveFeedback }) => (
+const FeedbackOptions = ({ options, onLeaveFeedback }) => (
   <div className={s.container}>
-    {option.map(label => (
+    {options.map(option => (
       <button
-        key={label}
+        key={option}
         className={s.button}
         type="button"
-        onClick={() => onLeaveFeedback(label)}
+        onClick={() => onLeaveFeedback(option)}
       >
-        {label}
+        {option}
       </button>
     ))}
   </div>
